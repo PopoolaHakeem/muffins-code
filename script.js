@@ -19,7 +19,7 @@ closeMenuButton.addEventListener('click', () => {
 for (const link of mobileMenu.querySelectorAll('a')) {
   link.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
-    openMenuButton.classList.remove('');
+    openMenuButton.classList.remove('hidden');
   });
 }
 
