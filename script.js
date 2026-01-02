@@ -14,11 +14,12 @@ closeMenuButton.addEventListener('click', () => {
 });
 
 
+
 // close mobile menu when a link is clicked
 for (const link of mobileMenu.querySelectorAll('a')) {
   link.addEventListener('click', () => {
     mobileMenu.classList.add('hidden');
-    openMenuButton.classList.remove('hidden');
+    openMenuButton.classList.remove('');
   });
 }
 
