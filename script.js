@@ -1,4 +1,4 @@
-const mobileMenu = document.getElementById("mobile-menu");
+const mobileMenu = document.querySelector("mobile-menu");
 const openMenuButtons = document.querySelectorAll("[command='open']");
 const closeMenuButtons = document.querySelectorAll("[command='close']");
 openMenuButtons.forEach((button) => {
