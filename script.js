@@ -1,15 +1,11 @@
 const mobileMenu = document.querySelector("#mobile-menu");
-const openMenuButtons = document.querySelectorAll("#openMenu");
-const closeMenuButtons = document.querySelectorAll("#closeMenu");
+const openMenuBtn = document.querySelector("#openMenu");
+const closeMenuBtn = document.querySelector("#closeMenu");
 
-openMenuButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    mobileMenu.classList.remove("hidden");
-  });
-});
+openMenuBtn.onclick = function() {
+  mobileMenu.classList.remove("hidden");
+}
 
-closeMenuButtons.forEach((button) => {
-  button.addEventListener("click", () => {
-    mobileMenu.classList.add("hidden");
-  });
-});
+closeMenuBtn.onclick = function() {
+  mobileMenu.classList.add("hidden");
+}
