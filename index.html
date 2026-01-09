@@ -18,8 +18,8 @@
     <div class="bg-gradient-to-bl from-orange-800 to-[#000] w-auto">
 
       <!-- mobile nav links  -->
-      <div>
-        <nav  class="lg:hidden">
+      <!-- <div>
+        <nav class="lg:hidden">
           <div id="mobile-menu"
             class="hidden lg:hidden fixed inset-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
             <div class="flex items-center justify-between">
@@ -60,23 +60,20 @@
             </div>
           </div>
         </nav>
-      </div>
+      </div> -->
 
 
 
       <!-- mobile nav links-->
-      <!-- <div>
-        <el-dialog>
-          <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden ">
-            <div tabindex="0" class="fixed inset-0 focus:outline-none">
-              <el-dialog-panel id="closeMenu"
+      <div>
+              <div id="mobile-menu"
                 class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
                 <div class="flex items-center justify-between">
                   <a href="#" class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
                     <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font"> MuffinsCode</span>
                     <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto" />
                   </a>
-                  <button type="button" command="close" commandfor="mobile-menu"
+                  <button id="closeMenu"
                     class="-m-2.5 rounded-md p-2.5 text-gray-200">
                     <span class="sr-only">Close menu</span>
                     <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
@@ -109,13 +106,8 @@
                     </div>
                   </menu>
                 </div>
-
-              </el-dialog-panel>
+              </div> 
             </div>
-          </dialog>
-        </el-dialog>
-
-      </div> -->
 
       <!-- first section -->
       <header class="absolute inset-x-0 top-0 z-50">
@@ -129,7 +121,7 @@
           </div>
 
           <div>
-            <button type="button" command="show-modal" commandfor="mobile-menu"
+            <button id="openMenu"
               class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 lg:hidden">
               <span class="sr-only">Open main menu</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
