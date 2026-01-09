@@ -10,3 +10,10 @@ closeMenuButton.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
     openMenuButton.classList.remove('hidden');
 });
+
+for (const link of mobileMenu.querySelectorAll('a')) {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    openMenuButton.classList.remove('hidden');
+  });
+}
