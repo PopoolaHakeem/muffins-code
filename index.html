@@ -19,54 +19,48 @@
 
       <!-- mobile nav links-->
       <div>
-        <el-dialog>
-          <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden ">
-            <div tabindex="0" class="fixed inset-0 focus:outline-none">
-              <el-dialog-panel
-                class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-                <div class="flex items-center justify-between">
-                  <a href="#" class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
-                    <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font"> MuffinsCode</span>
-                    <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto" />
-                  </a>
-                  <button type="button" command="close" commandfor="mobile-menu"
-                    class="-m-2.5 rounded-md p-2.5 text-gray-200">
-                    <span class="sr-only">Close menu</span>
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                      aria-hidden="true" class="size-7 text-[#fff]">
-                      <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-                    </svg>
-                  </button>
-                  </a>
-                </div>
+        <div id="mobile-menu"
+          class="hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+          <div class="flex items-center justify-between">
+            <a href="#" class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
+              <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font"> MuffinsCode</span>
+              <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto" />
+            </a>
+            <button type="button" id="closeMenu" command="hide-modal" commandfor="mobile-menu"
+              class="-m-2.5 rounded-md p-2.5 text-gray-200 cursor-pointer lg:hidden">
+              <span class="sr-only">Close menu</span>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+                aria-hidden="true" class="size-7 text-[#fff]">
+                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+            </button>
+            </a>
+          </div>
 
-                <div>
-                  <menu class="space-y-7">
-                    <div class="flex flex-col text-xl md:text-[1.3rem] py-9 space-y-6 font-semibold text-white">
-                      <a href="#" class=" ">Home</a>
-                      <a href="#" class=" ">About</a>
-                      <a href="#" class=" ">Services</a>
-                      <a href="#" class=" ">Contact</a>
-                    </div>
-                    <div>
-                      <a href=""
-                        class="flex justify-center items-cente w-25 space-x-1 bg-blue-400 rounded-full px-3 py-2 hover:bg-blue-500 hover:scale-105 transition-all duration-300 ease-in-out">
-                        <p>
-                          <iconify-icon icon="mdi:file" width="20" height="20" class="text-white flex"></iconify-icon>
-                        </p>
-                        <p class="flex flex-col">
-                          <span class="text-[12px] text-white font-semibold">Download</span>
-                          <span class="text-[11px] text-white font-semibold leading-3">Resume</span>
-                        </p>
-                      </a>
-                    </div>
-                  </menu>
-                </div>
+          <div>
+            <menu class="space-y-7">
+              <div class="flex flex-col text-xl md:text-[1.3rem] py-9 space-y-6 font-semibold text-white">
+                <a href="#" class=" ">Home</a>
+                <a href="#" class=" ">About</a>
+                <a href="#" class=" ">Services</a>
+                <a href="#" class=" ">Contact</a>
+              </div>
+              <div>
+                <a href=""
+                  class="flex justify-center items-cente w-25 space-x-1 bg-orange-800 rounded-full px-12 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
+                  <p>
+                    <iconify-icon icon="mdi:file" width="20" height="20" class="text-white flex"></iconify-icon>
+                  </p>
+                  <p class="flex flex-col">
+                    <span class="text-[12px] text-white font-semibold">Download</span>
+                    <span class="text-[11px] text-white font-semibold leading-3">Resume</span>
+                  </p>
+                </a>
+              </div>
+            </menu>
+          </div>
 
-              </el-dialog-panel>
-            </div>
-          </dialog>
-        </el-dialog>
+        </div>
 
       </div>
 
@@ -81,9 +75,9 @@
             </a>
           </div>
 
-          <div>
-            <button type="button" command="show-modal" commandfor="mobile-menu"
-              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 lg:hidden">
+          <div class="flex lg:hidden">
+            <button id="openMenu" type="button" command="show-modal" commandfor="mobile-menu"
+              class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 cursor-pointer lg:hidden">
               <span class="sr-only">Open main menu</span>
               <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
                 aria-hidden="true" class="size-7 text-[#ffff]">
@@ -102,8 +96,8 @@
 
           <!-- resume section -->
           <div class="hidden lg:flex lg:flex-1 lg:justify-end h-auto rounded-full px-3 py-2 lg:gap-x-12">
-            <a href="resume.html" 
-              class="flex justify-center items-center space-x-1 bg-orange-800 rounded-full px-3 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
+            <a href="resume.html"
+              class="flex justify-center items-center space-x-1 bg-orange-800 rounded-full px-5 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
               <p>
                 <iconify-icon icon="mdi:file" width="20" height="20" class="text-white flex"></iconify-icon>
               </p>
@@ -122,7 +116,9 @@
         <div class="flex flex-col justify-center items-start px-6 text-white space-y-10">
           <div>
             <h3 class="text-[1.2rem] text-">Hey, I am <span class="text-red-400">Hakeem</span></h3>
-            <a href="resume.html"><h1 class="text-[2.5rem] text-white">Web Developer</h1></a>
+            <a href="resume.html">
+              <h1 class="text-[2.5rem] text-white">Web Developer</h1>
+            </a>
             <p>A Front-End Developer crafting clean, responsive & user-focused interfaces.</p>
           </div>
 
@@ -156,8 +152,8 @@
           </h1>
           <p>
             I'm <span class="text-red-400">Hakeem Popoola</span>,
-             a passionate Frontend Developer dedicated to crafting clean, interactive, and responsive web experiences.
-            I love turning complex ideas into seamless  digital products with a sprinkle of creativity and code.
+            a passionate Frontend Developer dedicated to crafting clean, interactive, and responsive web experiences.
+            I love turning complex ideas into seamless digital products with a sprinkle of creativity and code.
           </p>
 
         </div>
@@ -176,10 +172,12 @@
           </p>
         </div>
 
-        <div class="px-6 flex flex-col sm:flex-row justify-center items-center md:justify-center md:items-center space-y-5 space-x-3 sm:space-y-0 md:space-x-5">
-          <div class="flex justify-between items-center  px- space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
+        <div
+          class="px-6 flex flex-col sm:flex-row justify-center items-center md:justify-center md:items-center space-y-5 space-x-3 sm:space-y-0 md:space-x-5">
+          <div
+            class="flex justify-between items-center  px- space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
             <p>
-              <iconify-icon icon="mingcute:star-fill" width="24" height="24"  style="color: #fb3922"></iconify-icon>
+              <iconify-icon icon="mingcute:star-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
             </p>
             <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
               <span>UI/UX Web</span>
@@ -189,7 +187,8 @@
 
           <div class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
             <p>
-              <iconify-icon icon="sidekickicons:computer-laptop" width="24" height="24"  style="color: #fb3922"></iconify-icon>
+              <iconify-icon icon="sidekickicons:computer-laptop" width="24" height="24" style="color: #fb3922">
+              </iconify-icon>
             </p>
             <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
               <span>Responsive</span>
@@ -199,7 +198,8 @@
 
           <div class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
             <p>
-              <iconify-icon icon="material-symbols:settings-rounded" width="24" height="24"  style="color: #fb3922"></iconify-icon>
+              <iconify-icon icon="material-symbols:settings-rounded" width="24" height="24" style="color: #fb3922">
+              </iconify-icon>
             </p>
             <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
               <span>API</span>
@@ -211,7 +211,7 @@
         <div class="h-full w-full flex justify-center items-center space-x-5">
           <div class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
             <p>
-              <iconify-icon icon="flowbite:bug-solid" width="24" height="24"  style="color: #fb3922"></iconify-icon>
+              <iconify-icon icon="flowbite:bug-solid" width="24" height="24" style="color: #fb3922"></iconify-icon>
             </p>
             <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
               <span>Testing &</span>
@@ -221,7 +221,7 @@
 
           <div class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
             <p>
-              <iconify-icon icon="mingcute:flash-fill" width="24" height="24"  style="color: #fb3922"></iconify-icon>
+              <iconify-icon icon="mingcute:flash-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
             </p>
             <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
               <span>Website</span>
@@ -233,14 +233,16 @@
       </div>
 
       <!-- fourth section >> project -->
-      <div class="bg-purple-30 h-scree w-full px-6 py-10 flex flex-col justify-center items-center space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
+      <div
+        class="bg-purple-30 h-scree w-full px-6 py-10 flex flex-col justify-center items-center space-y-5 md:space-y-0 md:space-x-5 md:flex-row">
 
         <div class="bg-pink-20 text-white h-full w-full flex flex-col justify-center items-start space-y-5">
           <h3 class="font-semibold text-[18px] md:text-xl">
             Project
           </h3>
           <p>
-            A few things I've built from landing pages to full-blown web apps. Clean codes, tasty design, just like muffins.
+            A few things I've built from landing pages to full-blown web apps. Clean codes, tasty design, just like
+            muffins.
           </p>
         </div>
 
@@ -268,6 +270,7 @@
 
 
     </div>
+    <script src="script.js"></script>
 </body>
 
 </html>

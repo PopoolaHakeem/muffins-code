@@ -1,14 +1,15 @@
-// const mobileMenu = document.querySelector("mobile-menu");
-// const openMenuButtons = document.querySelectorAll("[command='open']");
-// const closeMenuButtons = document.querySelectorAll("[command='close']");
-// openMenuButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     mobileMenu.showModal();
-//   });
-// });
+const mobileMenu = document.querySelector("#mobile-menu");
+const openMenuButtons = document.querySelectorAll("#openMenu");
+const closeMenuButtons = document.querySelectorAll("#closeMenu");
 
-// closeMenuButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     mobileMenu.close();
-//   });
-// });
+openMenuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+  });
+});
+
+closeMenuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+});
