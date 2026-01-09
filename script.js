@@ -1,15 +1,12 @@
-// const mobileMenu = document.querySelector("#mobile-menu");
-// const openMenuButtons = document.querySelectorAll("#openMenu");
-// const closeMenuButtons = document.querySelectorAll("#closeMenu");
+const mobileMenu = document.querySelector('#mobile-menu');
+const openMenuButton = document.querySelector('#openMenu');
+const closeMenuButton = document.querySelector('#closeMenu');
 
-// openMenuButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     mobileMenu.classList.remove("hidden");
-//   });
-// });
-
-// closeMenuButtons.forEach((button) => {
-//   button.addEventListener("click", () => {
-//     mobileMenu.classList.add("hidden");
-//   });
-// });
+openMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.remove('hidden');
+  openMenuButton.classList.add('hidden');
+});
+closeMenuButton.addEventListener('click', () => {
+  mobileMenu.classList.add('hidden');
+    openMenuButton.classList.remove('hidden');
+});
