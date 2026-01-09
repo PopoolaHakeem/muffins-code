@@ -1,6 +1,6 @@
 const mobileMenu = document.querySelector("#mobile-menu");
-const openMenuButtons = document.querySelectorAll("[command='show-modal']");
-const closeMenuButtons = document.querySelectorAll("[command='hide-modal']");
+const openMenuButtons = document.querySelectorAll("#openMenu");
+const closeMenuButtons = document.querySelectorAll("#closeMenu");
 
 openMenuButtons.forEach((button) => {
   button.addEventListener("click", () => {
