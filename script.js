@@ -1,11 +1,15 @@
 const mobileMenu = document.querySelector("#mobile-menu");
-const openMenuBtn = document.querySelector("#openMenu");
-const closeMenuBtn = document.querySelector("#closeMenu");
+const openMenuButtons = document.querySelectorAll("[command='show-modal']");
+const closeMenuButtons = document.querySelectorAll("[command='hide-modal']");
 
-openMenuBtn.onclick = function() {
-  mobileMenu.classList.remove("hidden");
-}
+openMenuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    mobileMenu.classList.remove("hidden");
+  });
+});
 
-closeMenuBtn.onclick = function() {
-  mobileMenu.classList.add("hidden");
-}
+closeMenuButtons.forEach((button) => {
+  button.addEventListener("click", () => {
+    mobileMenu.classList.add("hidden");
+  });
+});
