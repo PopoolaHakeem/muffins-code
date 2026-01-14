@@ -8,7 +8,7 @@
   font-weight: 400;
   font-style: normal;
 }
-.autoRotate {
+/* .autoRotate {
   animation: AutoRotateAnimation;
   animation-timeline: view(70% 0);
 }
@@ -19,7 +19,7 @@
   to {
     transform: rotate(360deg);
   }
-}
+} */
 .autoShow {
   animation: AutoShowAnimation;
   animation-timeline: view();
@@ -60,5 +60,10 @@
     scale: 1;
     translate: 0 0;
    }
+}
+
+.project-image {
+  width: 200px;
+  height: auto;
 }
 

@@ -17,3 +17,4 @@ for (const link of mobileMenu.querySelectorAll('a')) {
     openMenuButton.classList.remove('hidden');
   });
 }
+
