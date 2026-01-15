@@ -2,6 +2,15 @@ const mobileMenu = document.querySelector('#mobile-menu');
 const openMenuButton = document.querySelector('#openMenu');
 const closeMenuButton = document.querySelector('#closeMenu');
 
+const nav = document.querySelectorAll("nav");
+nav.addEventListener('scrollY', () => {
+  if (window.scrollY > 1) {
+    nav.classList.add('bg-#000', 'shadow-lg');
+  } else {
+    nav.classList.remove('bg-black', 'shadow-lg');
+  }
+});
+
 openMenuButton.addEventListener('click', () => {
   mobileMenu.classList.remove('hidden');
   openMenuButton.classList.add('hidden');
@@ -18,3 +27,10 @@ for (const link of mobileMenu.querySelectorAll('a')) {
   });
 }
 
+// nav.addEventListener('scrollY', () => {
+//   if (window.scrollY > 1) {
+//     nav.classList.add('bg-black', 'shadow-lg');
+//   } else {
+//     nav.classList.remove('bg-black', 'shadow-lg');
+//   }
+// });
