@@ -13,10 +13,14 @@ closeMenuButton.addEventListener('click', () => {
   mobileMenu.classList.add('hidden');
 });
 
-// test button
 
-
-
+// close mobile menu when a link is clicked
+for (const link of mobileMenu.querySelectorAll('a')) {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.add('hidden');
+    openMenuButton.classList.remove('hidden');
+  });
+}
 
 
 // openMenuButton.addEventListener('click', () => {
@@ -32,11 +36,5 @@ closeMenuButton.addEventListener('click', () => {
 
 
 
-// close mobile menu when a link is clicked
-for (const link of mobileMenu.querySelectorAll('a')) {
-  link.addEventListener('click', () => {
-    mobileMenu.classList.remove('active');
-    openMenuButton.classList.remove('hidden');
-  });
-}
+
 
