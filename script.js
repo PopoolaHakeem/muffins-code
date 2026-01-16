@@ -9,8 +9,8 @@ openMenuButton.addEventListener('click', () => {
 });
 
 closeMenuButton.addEventListener('click', () => {
-  openMenuButton.classList.remove('hidden');
   mobileMenu.classList.add('hidden');
+  openMenuButton.classList.remove('hidden');
 });
 
 

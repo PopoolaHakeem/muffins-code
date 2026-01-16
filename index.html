@@ -14,23 +14,23 @@
 </head>
 
 <body>
-
+<!-- flex flex-col items-cente  justify-between -->
   <!-- mobile nav links-->
 
   <nav id="mobile-menu"
-    class="hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-    <div class="flex flex-col items-cente  justify-between">
-      <div class="flex justify-between items-center">
+    class="hidden fixed inset-y-0 right-0 z-90 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+    <div class="">
+      <div class="cursor-pointer flex justify-between items-center">
         <div class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
           <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font"> MuffinsCode</span>
           <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto" />
         </div>
 
-        <div id="closeMenu">
-          <button class="-m-2.5 rounded-md p-2.5 text-gray-200 cursor-pointer hover:bg-gray-700/10">
+        <div id="closeMenu" class="">
+          <button class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
             <span class="sr-only">Close menu</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-              aria-hidden="true" class="size-7 text-[#fff]">
+              aria-hidden="true" class="size-7 text-[#fff] cursor-pointer">
               <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
@@ -67,11 +67,13 @@
     </div>
   </nav>
 
+
+
   <!-- main content -->
   <div class="bg-gradient-to-bl from-orange-800 to-[#000] w-auto">
 
     <!-- first section -->
-    <header class="fixed  inset-x-0 top-0 z-50">
+    <header class="fixed inset-x-0 top-0 z-50">
       <nav aria-label="Global" class=" bg-transparent flex items-center justify-between p-6 lg:px-8 ">
         <!-- nav logo -->
         <div class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
@@ -84,7 +86,7 @@
         <!-- cta btn -->
         <div id="openMenu">
           <button
-            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
+            class=" -m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
             <span class="sr-only">Open main menu</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
               aria-hidden="true" class="size-7 text-[#ffff]">
