@@ -23,9 +23,6 @@ for (const link of mobileMenu.querySelectorAll('a')) {
 }
 
 
-// openMenuButton.addEventListener('click', () => {
-//   alert('Hello world!');
-// });
 
 
 
