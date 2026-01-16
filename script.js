@@ -1,5 +1,6 @@
-const mobileMenu = document.querySelector('#mobile-menu');
+// mobile menu toggle
 const openMenuButton = document.querySelector('#openMenu');
+const mobileMenu = document.querySelector('#mobile-menu');
 const closeMenuButton = document.querySelector('#closeMenu');
 
 openMenuButton.addEventListener('click', () => {
@@ -8,37 +9,34 @@ openMenuButton.addEventListener('click', () => {
 });
 
 closeMenuButton.addEventListener('click', () => {
-  mobileMenu.classList.add('hidden');
   openMenuButton.classList.remove('hidden');
+  mobileMenu.classList.add('hidden');
 });
 
+// test button
+
+
+
+
+
+// openMenuButton.addEventListener('click', () => {
+//   alert('Hello world!');
+// });
+
+
+
+
+
+
+
+
+
+
+// close mobile menu when a link is clicked
 // for (const link of mobileMenu.querySelectorAll('a')) {
 //   link.addEventListener('click', () => {
-//     mobileMenu.classList.add('hidden');
+//     mobileMenu.classList.remove('active');
 //     openMenuButton.classList.remove('hidden');
 //   });
 // }
 
-
-
-
-
-
-
-
-// const nav = document.querySelectorAll("nav");
-// nav.addEventListener('scrollY', () => {
-//   if (window.scrollY > 1) {
-//     nav.classList.add('bg-#000', 'shadow-lg');
-//   } else {
-//     nav.classList.remove('bg-black', 'shadow-lg');
-//   }
-// });
-
-// nav.addEventListener('scrollY', () => {
-//   if (window.scrollY > 1) {
-//     nav.classList.add('bg-black', 'shadow-lg');
-//   } else {
-//     nav.classList.remove('bg-black', 'shadow-lg');
-//   }
-// });

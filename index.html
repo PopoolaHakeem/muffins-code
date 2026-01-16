@@ -14,96 +14,45 @@
 </head>
 
 <body>
-  <div>
-    <div class="bg-gradient-to-bl from-orange-800 to-[#000] w-auto">
 
-      <!-- mobile nav links-->
-      <nav id="onScroll" id="mobile-menu" class="main">
-        <div 
-          class="hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
-          <div class="flex items-center justify-between">
-            <a href="#" class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
-              <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font"> MuffinsCode</span>
-              <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto" />
-            </a>
-            <button id="closeMenu" class="-m-2.5 rounded-md p-2.5 text-gray-200 cursor-pointer hover:bg-gray-700/10">
-              <span class="sr-only">Close menu</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                aria-hidden="true" class="size-7 text-[#fff]">
-                <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-            </a>
-          </div>
+  <!-- mobile nav links-->
 
-          <!-- mobile links -->
-          <div>
-            <menu class="space-y-7">
-              <div class="flex flex-col text-xl md:text-[1.3rem] py-9 space-y-6 font-semibold text-white">
-                <a href="#Home" class="hover:text-orange-900 ">Home</a>
-                <a href="#About" class="hover:text-orange-900 ">About</a>
-                <a href="#Services" class="hover:text-orange-900 ">Services</a>
-                <a href="#Contact" class="hover:text-orange-900 ">Contact</a>
-                <a href="#Projects" class="hover:text-orange-900 ">Projects</a>
-                <a href="#Skills" class="hover:text-orange-900 ">Skills</a>
-              </div>
-
-              <!-- Download Resume -->
-              <div>
-                <a href="resume.html"
-                  class="flex justify-center items-cente w-25 space-x-1 bg-orange-800 rounded-full px-12 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
-                  <p>
-                    <iconify-icon icon="mdi:file" width="20" height="20" class="text-white flex"></iconify-icon>
-                  </p>
-                  <p class="flex flex-col">
-                    <span class="text-[12px] text-white font-semibold">Download</span>
-                    <span class="text-[11px] text-white font-semibold leading-3">Resume</span>
-                  </p>
-                </a>
-              </div>
-            </menu>
-          </div>
+  <nav id="mobile-menu"
+    class="hidden fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gradient-to-tl from-orange-900 to-[#000] p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+    <div class="flex flex-col items-cente  justify-between">
+      <div class="flex justify-between items-center">
+        <div class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
+          <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font"> MuffinsCode</span>
+          <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto" />
         </div>
-      </nav>
 
-      <!-- first section -->
-      <header class="fixed  inset-x-0 top-0 z-50">
-        <nav aria-label="Global" class=" bg-transparent flex items-center justify-between p-6 lg:px-8 ">
-          <!-- nav logo -->
-          <div class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
-            
-              <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font">MuffinsCode</span>
-              <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto">
-            
+        <div id="closeMenu">
+          <button class="-m-2.5 rounded-md p-2.5 text-gray-200 cursor-pointer hover:bg-gray-700/10">
+            <span class="sr-only">Close menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-7 text-[#fff]">
+              <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- mobile links -->
+      <div>
+        <menu class="space-y-7">
+          <div class="flex flex-col text-xl md:text-[1.3rem] py-9 space-y-6 font-semibold text-white">
+            <a href="#Home" class="hover:text-orange-900 ">Home</a>
+            <a href="#About" class="hover:text-orange-900 ">About</a>
+            <a href="#Services" class="hover:text-orange-900 ">Services</a>
+            <a href="#Contact" class="hover:text-orange-900 ">Contact</a>
+            <a href="#Projects" class="hover:text-orange-900 ">Projects</a>
+            <a href="#Skills" class="hover:text-orange-900 ">Skills</a>
           </div>
 
-          <!-- cta btn -->
+          <!-- Download Resume -->
           <div>
-            <button id="openMenu" class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
-              <span class="sr-only">Open main menu</span>
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
-                aria-hidden="true" class="size-7 text-[#ffff]">
-                <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
-            </button>
-          </div>
-
-          <!-- nav links  -->
-          <div class="hidden md:flex md:gap-x-12">
-            <a href="#Home"
-              class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">Home</a>
-            <a href="#About"
-              class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">About</a>
-            <a href="#Services"
-              class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">Services</a>
-            <a href="#Contact"
-              class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">Contact</a>
-          </div>
-
-          <!-- Resume link -->
-          <div class="hidden md:flex lg:justify-end h-auto rounded-full px-3 py-2 lg:gap-x-12">
             <a href="resume.html"
-              class="flex justify-center items-center space-x-1 bg-orange-800 rounded-full px-5 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
+              class="flex justify-center items-cente w-25 space-x-1 bg-orange-800 rounded-full px-12 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
               <p>
                 <iconify-icon icon="mdi:file" width="20" height="20" class="text-white flex"></iconify-icon>
               </p>
@@ -113,402 +62,458 @@
               </p>
             </a>
           </div>
-        </nav>
-      </header>
-
-      <!-- hero contents -->
-      <div
-        class="flex flex-col sm:flex-row pb-10 pt-30 w-auto items-center justify-center space-y-0 sm:space-y-0 sm:space-x-10 ">
-        <div class="flex flex-col justify-center items-start px-6 text-white space-y-10">
-          <div>
-            <h3 class="text-[1.2rem]">Hey, I am <span class="text-orange-600 uppercase text-2xl">Hakeem!</span></h3>
-            <h1 class="text-[2.5rem] text-orange-100">Web Developer</h1>
-            <p>A Front-End Developer crafting clean, responsive & user-focused interfaces.</p>
-          </div>
-
-          <div class="flex items-center space-x-3 sm:space-x-5 justify-center md:justify-start">
-            <a href="contact.html">
-              <p
-                class="rounded-full bg-orange-600 px-3 py-2 flex justify-center items-center hover:bg-orange-700 duration-300 ease-in-out">
-                Hire me
-              </p>
-            </a>
-
-            <a href="mailto:hakeempopoola04@gmail.com">
-              <p
-                class="flex justify-center items-center rounded-full border py-[6px] px-[9px] hover:bg-orange-700 duration-300 ease-in-out">
-                <a href="mailto:hakeempopoola04@gmail.com">
-                  <iconify-icon icon="hugeicons:mail-02" width="20" height="20"></iconify-icon>
-              </p>
-            </a>
-          </div>
-        </div>
-
-        <!-- image section -->
-        <div class="flex justify-center items-center px-6 ">
-          <img src="/images/Group 2.png" alt="">
-        </div>
-
+        </menu>
       </div>
+    </div>
+  </nav>
 
-      <!-- second section >> About  -->
-      <div id="About"
-        class="w-full flex justify-center items-center flex-col md:flex-row md:space-x-10 px-6 pt-10 bg-gradient-to-tr from-orange-950 to-black">
-        <div class="flex flex-col justify-center items-cente py-10 w-full text-white space-y-7 md:text-xl">
+  <!-- main content -->
+  <div class="bg-gradient-to-bl from-orange-800 to-[#000] w-auto">
 
-          <h1 class="font-semibold text-3xl text-orange-600 md:text-4xl autoShow">
-            About Me
-          </h1>
-          <p class="autoShow">
-            I'm <span class="text-red-400">Hakeem Popoola</span>,
-            a passionate Frontend Developer dedicated to crafting clean, interactive, and responsive web experiences.
-            I love turning complex ideas into seamless digital products with a sprinkle of creativity and code.
-          </p>
+    <!-- first section -->
+    <header class="fixed  inset-x-0 top-0 z-50">
+      <nav aria-label="Global" class=" bg-transparent flex items-center justify-between p-6 lg:px-8 ">
+        <!-- nav logo -->
+        <div class="flex flex-row-reverse justify-center items-center -m-1.5 p-1.5">
+
+          <span class="text-xl md:text-2xl pl-2 font-semibold text-white muffins-font">MuffinsCode</span>
+          <img class="h-10 rounded-full" src="/images/muffins.jpeg" alt="" class="h-8 w-auto">
 
         </div>
 
-        <div class="flex justify-center items-center w-full autShow imageReview">
-          <img src="/images/Group 2.png" alt="" width="">
-        </div>
-      </div>
-
-      <!-- third section >> services  -->
-      <div id="Services" class="px-6 py-15 w-full flex flex-col text-white space-y-7">
-
-        <div class="flex justify-start font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
-          <p>
-            Services:
-          </p>
+        <!-- cta btn -->
+        <div id="openMenu">
+          <button
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
+            <span class="sr-only">Open main menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
+              aria-hidden="true" class="size-7 text-[#ffff]">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
         </div>
 
-        <!-- Services -->
-        <div
-          class="px-6 flex flex-col sm:flex-row justify-center items-center md:justify-center md:items-center space-y-5 space-x-3 sm:space-y-0 md:space-x-5">
-          <div
-            class="flex justify-between items-center  px- space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+        <!-- nav links  -->
+        <div class="hidden md:flex md:gap-x-12">
+          <a href="#Home"
+            class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">Home</a>
+          <a href="#About"
+            class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">About</a>
+          <a href="#Services"
+            class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">Services</a>
+          <a href="#Contact"
+            class="text-sm/6 font-semibold text-white py-1 px-2 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">Contact</a>
+        </div>
+
+        <!-- Resume link -->
+        <div class="hidden md:flex lg:justify-end h-auto rounded-full px-3 py-2 lg:gap-x-12">
+          <a href="resume.html"
+            class="flex justify-center items-center space-x-1 bg-orange-800 rounded-full px-5 py-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
             <p>
-              <iconify-icon icon="mingcute:star-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
+              <iconify-icon icon="mdi:file" width="20" height="20" class="text-white flex"></iconify-icon>
             </p>
-            <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
-              <span>UI/UX Web</span>
-              <span>Design</span>
+            <p class="flex flex-col">
+              <span class="text-[12px] text-white font-semibold">Download</span>
+              <span class="text-[11px] text-white font-semibold leading-3">Resume</span>
             </p>
-          </div>
+          </a>
+        </div>
+      </nav>
+    </header>
 
-          <div
-            class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
-            <p>
-              <iconify-icon icon="sidekickicons:computer-laptop" width="24" height="24" style="color: #fb3922">
-              </iconify-icon>
-            </p>
-            <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
-              <span>Responsive</span>
-              <span>Frontend Dev.</span>
-            </p>
-          </div>
-
-          <div
-            class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
-            <p>
-              <iconify-icon icon="material-symbols:settings-rounded" width="24" height="24" style="color: #fb3922">
-              </iconify-icon>
-            </p>
-            <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
-              <span>API</span>
-              <span>integration</span>
-            </p>
-          </div>
+    <!-- hero contents -->
+    <div
+      class="flex flex-col sm:flex-row pb-10 pt-30 w-auto items-center justify-center space-y-0 sm:space-y-0 sm:space-x-10 ">
+      <div class="flex flex-col justify-center items-start px-6 text-white space-y-10">
+        <div>
+          <h3 class="text-[1.2rem]">Hey, I am <span class="text-orange-600 uppercase text-2xl">Hakeem!</span></h3>
+          <h1 class="text-[2.5rem] text-orange-100">Web Developer</h1>
+          <p>A Front-End Developer crafting clean, responsive & user-focused interfaces.</p>
         </div>
 
-        <div class="h-full w-full flex justify-center items-center space-x-5">
-          <div
-            class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
-            <p>
-              <iconify-icon icon="flowbite:bug-solid" width="24" height="24" style="color: #fb3922"></iconify-icon>
+        <div class="flex items-center space-x-3 sm:space-x-5 justify-center md:justify-start">
+          <a href="contact.html">
+            <p
+              class="rounded-full bg-orange-600 px-3 py-2 flex justify-center items-center hover:bg-orange-700 duration-300 ease-in-out">
+              Hire me
             </p>
-            <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
-              <span>Testing &</span>
-              <span>Debugging</span>
-            </p>
-          </div>
+          </a>
 
-          <div
-            class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
-            <p>
-              <iconify-icon icon="mingcute:flash-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
+          <a href="mailto:hakeempopoola04@gmail.com">
+            <p
+              class="flex justify-center items-center rounded-full border py-[6px] px-[9px] hover:bg-orange-700 duration-300 ease-in-out">
+              <a href="mailto:hakeempopoola04@gmail.com">
+                <iconify-icon icon="hugeicons:mail-02" width="20" height="20"></iconify-icon>
             </p>
-            <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
-              <span>Website</span>
-              <span>Optimization</span>
-            </p>
-          </div>
+          </a>
         </div>
-
       </div>
 
-      <!-- fourth section >> project -->
-      <div id="Projects"
-        class="bg-purple-30 w-full px-6 py-10 flex flex-col justify-center items-center space-y-5 sm:space-y-0 md:space-x-10 md:flex-row">
-
-        <div class="bg-pink-20 text-white h-full w-full flex flex-col justify-center items-start space-y-5">
-          <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
-            Project
-          </h3>
-          <p class="autoShow">
-            A few things I've built from landing pages to full-blown web apps. Clean codes, tasty design, just like
-            muffins.
-          </p>
-        </div>
-
-        <!-- Projects links -->
-        <div
-          class="bg-pink-40 h-full w-full text-white space-x-5 space-y-7 gap-x-2 flex flex-col justify-center items-center md:flex-row  md:space-x-5 sm:space-y-0 md:space-y-0 sm:flex-row">
-
-          <!-- Project One -->
-          <div class="bg-blue-00 h-full w-full flex flex-col space-y-3 imageReview">
-
-            <a href="https://ace-autos.vercel.app/#" class="space-y-3">
-              <div
-                class="shadow-lg p-3 bg-gradient-to-tl from-orange-900 to-black rounded-lg hover:scale-105 transition-all duration-300 ease-in-out project-image">
-                <img src="/images/ace-autos.png" alt="" class="rounded-lg w-full h-full object-cover">
-              </div>
-
-              <h3 class="font-semibold text-[18px] text-orange-100 md:text-xl">
-                Project One
-              </h3>
-              <p class="flex flex-col">
-                <span>Clean-modern</span>
-                <span>Car Sales Web App</span>
-              </p>
-
-              <p>
-                <a href="https://ace-autos.vercel.app/#"
-                  class="w-10 flex justify-center items-center bg-orange-800 rounded-full py-2 px-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
-                  <iconify-icon icon="ph:share" width="24" height="24"></iconify-icon>
-                </a>
-              </p>
-            </a>
-
-          </div>
-
-          <!-- Project Two -->
-          <div class="bg-blue-00 h-full w-full flex flex-col space-y-3 imageReview">
-
-            <a href="https://muffins-makeup.vercel.app/" class="space-y-3">
-              <div
-                class="shadow-lg p-3 bg-gradient-to-tl from-orange-900 to-black rounded-lg hover:scale-105 transition-all duration-300 ease-in-out project-image">
-                <img src="/images/make-up.png" alt="" class="rounded-lg w-full h-full object-cover">
-              </div>
-
-              <h3 class="font-semibold text-[18px] text-orange-100 md:text-xl">
-                Project Two
-              </h3>
-              <p class="flex flex-col">
-                <span>Muffins Makeup</span>
-                <span>Responsive Beauty Website</span>
-              </p>
-
-              <p>
-                <a href="https://muffins-makeup.vercel.app/"
-                  class="w-10 flex justify-center items-center bg-orange-800 rounded-full py-2 px-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
-                  <iconify-icon icon="ph:share" width="24" height="24"></iconify-icon>
-                </a>
-              </p>
-            </a>
-
-          </div>
-
-        </div>
-
+      <!-- image section -->
+      <div class="flex justify-center items-center px-6 ">
+        <img src="/images/Group 2.png" alt="">
       </div>
-
-      <!-- fifth section >> skills -->
-      <div id="Skills" class="w-full px-6 py-10 flex flex-col justify-center items-center space-y-3 ">
-
-        <div class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
-          <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
-            Skills
-          </h3>
-          <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold autoShow">
-            What I bring to the table
-          </p>
-          <p class="autoShow">
-            I've built a solid toolkit to turn ideas into clean, fast, and responsive user experiences.
-          </p>
-        </div>
-
-        <!-- stack section -->
-        <div
-          class="h-auto md:h-30 text-white space-x-0 py-2 px-2 gap-x-2 flex  justify-center md:justify-start md:items-start ">
-
-          <!-- first section -->
-          <div class=" w-full h-full flex flex-col space-y-5 py-5 md:flex-row md:space-x-5 md:space-y-0 ">
-            <!-- languages -->
-            <div class="flex items-center space-x-3 imageReview">
-              <p>
-                <iconify-icon icon="guidance:tools" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </p>
-              <p class="flex flex-col space-y-1">
-                <span class="text-[16px] md:text-[18px] font-semibold text-orange-100">Languages</span>
-                <span class="text-[12px] md:text-[13px]">HTML, CSS, JavaScript</span>
-              </p>
-            </div>
-
-            <!-- Frameworks & Libraries -->
-            <div class="flex items-center space-x-3 imageReview">
-              <p>
-                <iconify-icon icon="mdi:plus-box" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </p>
-              <p class="flex flex-col space-y-1">
-                <span class="text-[16px] md:text-[18px] font-semibold text-orange-100 ">Frameworks & Libraries</span>
-                <span class="text-[12px] md:text-[13px]">React.js, Tailwind CSS, Flowbite</span>
-              </p>
-            </div>
-
-          </div>
-
-          <!-- second section -->
-          <div class="w-full h-full flex flex-col space-y-5 py-5 md:flex-row md:space-x-5 md:space-y-0">
-            <!-- Tools -->
-            <div class="flex items-center space-x-3 imageReview">
-              <p>
-                <iconify-icon icon="octicon:tools-24" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </p>
-              <p class="flex flex-col space-y-1">
-                <span class="text-[16px] md:text-[18px] font-semibold text-orange-100">Tools & Platforms</span>
-                <span class="text-[12px] md:text-[13px]">VS Code, Git & GitHub, Figma, Vercel</span>
-              </p>
-            </div>
-
-            <!-- Extrals -->
-            <div class="flex items-center space-x-3 imageReview">
-              <p>
-                <iconify-icon icon="mdi:stars-outline" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </p>
-              <p class="flex flex-col space-y-1">
-                <span class="text-[16px] md:text-[18px] font-semibold text-orange-100">Extras</span>
-                <span class="text-[12px] md:text-[13px]">UI/UX, API integration, SEO basics</span>
-              </p>
-            </div>
-          </div>
-        </div>
-
-      </div>
-
-      <!-- sixth section >> contact -->
-      <div id="Contact"
-        class="w-ful px-6 py-10 flex flex-col-reverse justify-center items-center space-y-5 sm:gap-x-5 sm:flex-row bg-gradient-to-tr from-orange-950 to-black">
-
-        <div class="space-y-5 sm:space-y-7 sm:space-x-10 flex flex-col ">
-          <div class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
-            <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
-              Contact Me
-            </h3>
-            <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold autoShow">
-              Let's build something amazing
-            </p>
-
-            <p class="autoShow">
-              Got a project in mind, a cool collab idea or just want to say hi?
-            </p>
-          </div>
-
-
-          <div class="w-full h-full text-white flex flex-col sm:flex-ro sm:space-x-5 space-y-3 autoShow">
-
-            <!-- mail -->
-            <div class="flex space-x-2">
-              <p>
-                <!-- <iconify-icon icon="hugeicons:mail-02" width="24" height="24"  style="color: #d24904"></iconify-icon> -->
-                <iconify-icon icon="line-md:email-twotone" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </p>
-              <p>
-                hakeempopoola04@gmail.com
-              </p>
-            </div>
-
-            <!-- phone -->
-            <div class="flex space-x-2">
-              <p>
-                <iconify-icon icon="line-md:phone-loop" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </p>
-              <p>
-                +234 813 535 0296
-              </p>
-            </div>
-
-            <!-- let's talk btn -->
-            <div class="flex space-x-2 items-center pt-7">
-              <a href="contact.html">
-                <button
-                  class="bg-orange-800 px-4 py-3 rounded-full cursor-pointer hover:bg-orange-900 duration-300 ease-in-out hover:scale-105">
-                  Let's talk
-                </button>
-              </a>
-            </div>
-
-          </div>
-        </div>
-
-        <div class="autoShow pb-7 imageReview">
-          <img src="/images/Group 2.png" alt="">
-        </div>
-
-      </div>
-
-
-      <!-- footer -->
-
-      <footer class="w-full bg-black text-white py-10">
-        <div class="container mx-auto px-6">
-          <div class="flex flex-col md:flex-row justify-between items-center">
-            <div class="mb-4 md:mb-0 text-center md:text-left">
-              <h3 class="text-xl font-bold">Hakeem Popoola</h3>
-              <p class="text-orange-600">Frontend Developer</p>
-            </div>
-
-            <div class="flex space-x-4">
-              <!-- linkedin -->
-              <a href="https://www.linkedin.com/in/hakeem-popoola-702540281/"
-                class="hover:text-orange-600 transition-colors">
-                <p class="sr-only">linkedin</p>
-                <iconify-icon icon="line-md:linkedin" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </a>
-
-              <!-- GitHub -->
-              <a href="https://github.com/PopoolaHakeem" class="hover:text-orange-600 transition-colors">
-                <p class="sr-only">GitHub</p>
-                <iconify-icon icon="line-md:github" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </a>
-
-              <!-- Twitter -->
-              <a href="https://x.com/PopoolaHak43939" class="hover:text-orange-600 transition-colors">
-                <p class="sr-only">Twitter</p>
-                <iconify-icon icon="line-md:twitter-x" width="24" height="24" style="color: #d24904"></iconify-icon>
-              </a>
-            </div>
-          </div>
-
-          <div class="mt-8 text-center text-sm text-gray-500">
-            &copy; 2025 MuffinsCode. All rights reserved.
-          </div>
-        </div>
-      </footer>
-
-
-
-
-
-
-
-
-
-
-
 
     </div>
 
-    <script src="script.js"></script>
+    <!-- second section >> About  -->
+    <div id="About"
+      class="w-full flex justify-center items-center flex-col md:flex-row md:space-x-10 px-6 pt-10 bg-gradient-to-tr from-orange-950 to-black">
+      <div class="flex flex-col justify-center items-cente py-10 w-full text-white space-y-7 md:text-xl">
+
+        <h1 class="font-semibold text-3xl text-orange-600 md:text-4xl autoShow">
+          About Me
+        </h1>
+        <p class="autoShow">
+          I'm <span class="text-red-400">Hakeem Popoola</span>,
+          a passionate Frontend Developer dedicated to crafting clean, interactive, and responsive web experiences.
+          I love turning complex ideas into seamless digital products with a sprinkle of creativity and code.
+        </p>
+
+      </div>
+
+      <div class="flex justify-center items-center w-full autShow imageReview">
+        <img src="/images/Group 2.png" alt="" width="">
+      </div>
+    </div>
+
+    <!-- third section >> services  -->
+    <div id="Services" class="px-6 py-15 w-full flex flex-col text-white space-y-7">
+
+      <div class="flex justify-start font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+        <p>
+          Services:
+        </p>
+      </div>
+
+      <!-- Services -->
+      <div
+        class="px-6 flex flex-col sm:flex-row justify-center items-center md:justify-center md:items-center space-y-5 space-x-3 sm:space-y-0 md:space-x-5">
+        <div
+          class="flex justify-between items-center  px- space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          <p>
+            <iconify-icon icon="mingcute:star-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
+          </p>
+          <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
+            <span>UI/UX Web</span>
+            <span>Design</span>
+          </p>
+        </div>
+
+        <div
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          <p>
+            <iconify-icon icon="sidekickicons:computer-laptop" width="24" height="24" style="color: #fb3922">
+            </iconify-icon>
+          </p>
+          <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
+            <span>Responsive</span>
+            <span>Frontend Dev.</span>
+          </p>
+        </div>
+
+        <div
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          <p>
+            <iconify-icon icon="material-symbols:settings-rounded" width="24" height="24" style="color: #fb3922">
+            </iconify-icon>
+          </p>
+          <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
+            <span>API</span>
+            <span>integration</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="h-full w-full flex justify-center items-center space-x-5">
+        <div
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          <p>
+            <iconify-icon icon="flowbite:bug-solid" width="24" height="24" style="color: #fb3922"></iconify-icon>
+          </p>
+          <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
+            <span>Testing &</span>
+            <span>Debugging</span>
+          </p>
+        </div>
+
+        <div
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          <p>
+            <iconify-icon icon="mingcute:flash-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
+          </p>
+          <p class="flex flex-col justify-center md:leading-5 text-[12px] md:text-[16px]">
+            <span>Website</span>
+            <span>Optimization</span>
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- fourth section >> project -->
+    <div id="Projects"
+      class="bg-purple-30 w-full px-6 py-10 flex flex-col justify-center items-center space-y-5 sm:space-y-0 md:space-x-10 md:flex-row">
+
+      <div class="bg-pink-20 text-white h-full w-full flex flex-col justify-center items-start space-y-5">
+        <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+          Project
+        </h3>
+        <p class="autoShow">
+          A few things I've built from landing pages to full-blown web apps. Clean codes, tasty design, just like
+          muffins.
+        </p>
+      </div>
+
+      <!-- Projects links -->
+      <div
+        class="bg-pink-40 h-full w-full text-white space-x-5 space-y-7 gap-x-2 flex flex-col justify-center items-center md:flex-row  md:space-x-5 sm:space-y-0 md:space-y-0 sm:flex-row">
+
+        <!-- Project One -->
+        <div class="bg-blue-00 h-full w-full flex flex-col space-y-3 imageReview">
+
+          <a href="https://ace-autos.vercel.app/#" class="space-y-3">
+            <div
+              class="shadow-lg p-3 bg-gradient-to-tl from-orange-900 to-black rounded-lg hover:scale-105 transition-all duration-300 ease-in-out project-image">
+              <img src="/images/ace-autos.png" alt="" class="rounded-lg w-full h-full object-cover">
+            </div>
+
+            <h3 class="font-semibold text-[18px] text-orange-100 md:text-xl">
+              Project One
+            </h3>
+            <p class="flex flex-col">
+              <span>Clean-modern</span>
+              <span>Car Sales Web App</span>
+            </p>
+
+            <p>
+              <a href="https://ace-autos.vercel.app/#"
+                class="w-10 flex justify-center items-center bg-orange-800 rounded-full py-2 px-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
+                <iconify-icon icon="ph:share" width="24" height="24"></iconify-icon>
+              </a>
+            </p>
+          </a>
+
+        </div>
+
+        <!-- Project Two -->
+        <div class="bg-blue-00 h-full w-full flex flex-col space-y-3 imageReview">
+
+          <a href="https://muffins-makeup.vercel.app/" class="space-y-3">
+            <div
+              class="shadow-lg p-3 bg-gradient-to-tl from-orange-900 to-black rounded-lg hover:scale-105 transition-all duration-300 ease-in-out project-image">
+              <img src="/images/make-up.png" alt="" class="rounded-lg w-full h-full object-cover">
+            </div>
+
+            <h3 class="font-semibold text-[18px] text-orange-100 md:text-xl">
+              Project Two
+            </h3>
+            <p class="flex flex-col">
+              <span>Muffins Makeup</span>
+              <span>Responsive Beauty Website</span>
+            </p>
+
+            <p>
+              <a href="https://muffins-makeup.vercel.app/"
+                class="w-10 flex justify-center items-center bg-orange-800 rounded-full py-2 px-2 hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out">
+                <iconify-icon icon="ph:share" width="24" height="24"></iconify-icon>
+              </a>
+            </p>
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <!-- fifth section >> skills -->
+    <div id="Skills" class="w-full px-6 py-10 flex flex-col justify-center items-center space-y-3 ">
+
+      <div class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
+        <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+          Skills
+        </h3>
+        <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold autoShow">
+          What I bring to the table
+        </p>
+        <p class="autoShow">
+          I've built a solid toolkit to turn ideas into clean, fast, and responsive user experiences.
+        </p>
+      </div>
+
+      <!-- stack section -->
+      <div
+        class="h-auto md:h-30 text-white space-x-0 py-2 px-2 gap-x-2 flex  justify-center md:justify-start md:items-start ">
+
+        <!-- first section -->
+        <div class=" w-full h-full flex flex-col space-y-5 py-5 md:flex-row md:space-x-5 md:space-y-0 ">
+          <!-- languages -->
+          <div class="flex items-center space-x-3 imageReview">
+            <p>
+              <iconify-icon icon="guidance:tools" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </p>
+            <p class="flex flex-col space-y-1">
+              <span class="text-[16px] md:text-[18px] font-semibold text-orange-100">Languages</span>
+              <span class="text-[12px] md:text-[13px]">HTML, CSS, JavaScript</span>
+            </p>
+          </div>
+
+          <!-- Frameworks & Libraries -->
+          <div class="flex items-center space-x-3 imageReview">
+            <p>
+              <iconify-icon icon="mdi:plus-box" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </p>
+            <p class="flex flex-col space-y-1">
+              <span class="text-[16px] md:text-[18px] font-semibold text-orange-100 ">Frameworks & Libraries</span>
+              <span class="text-[12px] md:text-[13px]">React.js, Tailwind CSS, Flowbite</span>
+            </p>
+          </div>
+
+        </div>
+
+        <!-- second section -->
+        <div class="w-full h-full flex flex-col space-y-5 py-5 md:flex-row md:space-x-5 md:space-y-0">
+          <!-- Tools -->
+          <div class="flex items-center space-x-3 imageReview">
+            <p>
+              <iconify-icon icon="octicon:tools-24" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </p>
+            <p class="flex flex-col space-y-1">
+              <span class="text-[16px] md:text-[18px] font-semibold text-orange-100">Tools & Platforms</span>
+              <span class="text-[12px] md:text-[13px]">VS Code, Git & GitHub, Figma, Vercel</span>
+            </p>
+          </div>
+
+          <!-- Extrals -->
+          <div class="flex items-center space-x-3 imageReview">
+            <p>
+              <iconify-icon icon="mdi:stars-outline" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </p>
+            <p class="flex flex-col space-y-1">
+              <span class="text-[16px] md:text-[18px] font-semibold text-orange-100">Extras</span>
+              <span class="text-[12px] md:text-[13px]">UI/UX, API integration, SEO basics</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- sixth section >> contact -->
+    <div id="Contact"
+      class="w-ful px-6 py-10 flex flex-col-reverse justify-center items-center space-y-5 sm:gap-x-5 sm:flex-row bg-gradient-to-tr from-orange-950 to-black">
+
+      <div class="space-y-5 sm:space-y-7 sm:space-x-10 flex flex-col ">
+        <div class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
+          <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+            Contact Me
+          </h3>
+          <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold autoShow">
+            Let's build something amazing
+          </p>
+
+          <p class="autoShow">
+            Got a project in mind, a cool collab idea or just want to say hi?
+          </p>
+        </div>
+
+
+        <div class="w-full h-full text-white flex flex-col sm:flex-ro sm:space-x-5 space-y-3 autoShow">
+
+          <!-- mail -->
+          <div class="flex space-x-2">
+            <p>
+              <!-- <iconify-icon icon="hugeicons:mail-02" width="24" height="24"  style="color: #d24904"></iconify-icon> -->
+              <iconify-icon icon="line-md:email-twotone" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </p>
+            <p>
+              hakeempopoola04@gmail.com
+            </p>
+          </div>
+
+          <!-- phone -->
+          <div class="flex space-x-2">
+            <p>
+              <iconify-icon icon="line-md:phone-loop" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </p>
+            <p>
+              +234 813 535 0296
+            </p>
+          </div>
+
+          <!-- let's talk btn -->
+          <div class="flex space-x-2 items-center pt-7">
+            <a href="contact.html">
+              <button
+                class="bg-orange-800 px-4 py-3 rounded-full cursor-pointer hover:bg-orange-900 duration-300 ease-in-out hover:scale-105">
+                Let's talk
+              </button>
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="autoShow pb-7 imageReview">
+        <img src="/images/Group 2.png" alt="">
+      </div>
+
+    </div>
+
+
+    <!-- footer -->
+
+    <footer class="w-full bg-black text-white py-10">
+      <div class="container mx-auto px-6">
+        <div class="flex flex-col md:flex-row justify-between items-center">
+          <div class="mb-4 md:mb-0 text-center md:text-left">
+            <h3 class="text-xl font-bold">Hakeem Popoola</h3>
+            <p class="text-orange-600">Frontend Developer</p>
+          </div>
+
+          <div class="flex space-x-4">
+            <!-- linkedin -->
+            <a href="https://www.linkedin.com/in/hakeem-popoola-702540281/"
+              class="hover:text-orange-600 transition-colors">
+              <p class="sr-only">linkedin</p>
+              <iconify-icon icon="line-md:linkedin" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </a>
+
+            <!-- GitHub -->
+            <a href="https://github.com/PopoolaHakeem" class="hover:text-orange-600 transition-colors">
+              <p class="sr-only">GitHub</p>
+              <iconify-icon icon="line-md:github" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </a>
+
+            <!-- Twitter -->
+            <a href="https://x.com/PopoolaHak43939" class="hover:text-orange-600 transition-colors">
+              <p class="sr-only">Twitter</p>
+              <iconify-icon icon="line-md:twitter-x" width="24" height="24" style="color: #d24904"></iconify-icon>
+            </a>
+          </div>
+        </div>
+
+        <div class="mt-8 text-center text-sm text-gray-500">
+          &copy; 2025 MuffinsCode. All rights reserved.
+        </div>
+      </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+  </div>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
