@@ -33,10 +33,10 @@ closeMenuButton.addEventListener('click', () => {
 
 
 // close mobile menu when a link is clicked
-// for (const link of mobileMenu.querySelectorAll('a')) {
-//   link.addEventListener('click', () => {
-//     mobileMenu.classList.remove('active');
-//     openMenuButton.classList.remove('hidden');
-//   });
-// }
+for (const link of mobileMenu.querySelectorAll('a')) {
+  link.addEventListener('click', () => {
+    mobileMenu.classList.remove('active');
+    openMenuButton.classList.remove('hidden');
+  });
+}
 
