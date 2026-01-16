@@ -14,43 +14,26 @@
 </head>
 
 <body>
-    <div>
-        <div data-aos="zoom-out-down">
-        <a href="mailto:hakeem@gmail.com">Contact Me</a>
-
+    <div class=" mx-auto px-6 py-10 bg-gradient-to-bl from-orange-900 to-[#000] min-h-scree text-white flex flex-col justify-center items-center">
+        
+        <div class="space-y-7 mx-auto ">
+            <h1>Contact Me</h1>
+            <form action="mailto:hakeem@gmail.com" method="POST" enctype="text/plain" class="flex flex-col space-y-1">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Your Name" class="border border-orange-800 px-4 py-1" required><br><br>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Email" required class="border border-orange-800 px-4 py-1" required><br><br>
+                <label for="message">Message:</label><br>
+                <textarea id="message" name="message" rows="4" cols="50" placeholder="Let's Connect!" required class="border border-orange-800 px-4 py-1"></textarea><br><br>
+                <input type="submit" value="Send" class="bg-orange-800 px-6 py-3 rounded-full hover:bg-orange-900 hover:scale-105 transition-all duration-300 ease-in-out cursor-pointer">
+            </form>
         </div>
+        
+
+    
 
 
-        <div data-aos="fade-up">
-            <div class="grid gap-4">
-                <div>
-                    <img class="h-auto max-w-full rounded-base"
-                        src="https://flowbite.s3.amazonaws.com/docs/gallery/featured/image.jpg" alt="">
-                </div>
-                <div class="grid grid-cols-5 gap-4">
-                    <div>
-                        <img class="h-auto max-w-full rounded-base"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-1.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-auto max-w-full rounded-base"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-2.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-auto max-w-full rounded-base"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-3.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-auto max-w-full rounded-base"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-4.jpg" alt="">
-                    </div>
-                    <div>
-                        <img class="h-auto max-w-full rounded-base"
-                            src="https://flowbite.s3.amazonaws.com/docs/gallery/square/image-5.jpg" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
+        
 
 
     </div>
