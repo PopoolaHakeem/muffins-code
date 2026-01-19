@@ -9,12 +9,14 @@
   <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
   <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
   <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Sacramento&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
 
 </head>
 
 <body>
-<!-- flex flex-col items-cente  justify-between -->
+  <!-- flex flex-col items-cente  justify-between -->
 
   <!-- mobile nav links-->
   <nav id="mobile-menu"
@@ -27,7 +29,8 @@
         </div>
 
         <div id="closeMenu" class="">
-          <button class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
+          <button
+            class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-200 md:hidden cursor-pointer hover:bg-gray-700/10">
             <span class="sr-only">Close menu</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon"
               aria-hidden="true" class="size-7 text-[#fff] cursor-pointer">
@@ -126,7 +129,8 @@
     <!-- hero contents -->
     <div
       class="flex flex-col sm:flex-row pb-10 pt-30 w-auto items-center justify-center space-y-0 sm:space-y-0 sm:space-x-10 ">
-      <div class="flex flex-col justify-center items-start px-6 text-white space-y-10">
+      <div data-aos="fade-left" data-aos-duration="800"
+        class="flex flex-col justify-center items-start px-6 text-white space-y-10">
         <div>
           <h3 class="text-[1.2rem]">Hey, I am <span class="text-orange-600 uppercase text-2xl">Hakeem!</span></h3>
           <h1 class="text-[2.5rem] text-orange-100">Web Developer</h1>
@@ -152,7 +156,7 @@
       </div>
 
       <!-- image section -->
-      <div class="flex justify-center items-center px-6 ">
+      <div data-aos="fade-right" data-aos-duration="800" class="flex justify-center items-center px-6 ">
         <img src="/images/Group 2.png" alt="">
       </div>
 
@@ -161,9 +165,10 @@
     <!-- second section >> About  -->
     <div id="About"
       class="w-full flex justify-center items-center flex-col md:flex-row md:space-x-10 px-6 pt-10 bg-gradient-to-tr from-orange-950 to-black">
-      <div class="flex flex-col justify-center items-cente py-10 w-full text-white space-y-7">
+      <div data-aos="fade-up" data-aos-duration="800"
+        class="flex flex-col justify-center items-cente py-10 w-full text-white space-y-7">
 
-        <h1 class="font-semibold text-3xl text-orange-600 md:text-4xl autoShow">
+        <h1 class="font-semibold text-3xl text-orange-600 md:text-4xl">
           About Me
         </h1>
         <p class="autoShow">
@@ -174,7 +179,7 @@
 
       </div>
 
-      <div class="flex justify-center items-center w-full autShow imageReview">
+      <div data-aos="fade-down" data-aos-duration="800" class="flex justify-center items-center w-full">
         <img src="/images/about-me.png" alt="" width="" class=" rounded-lg sm:rounded-full shadow-lg">
       </div>
     </div>
@@ -182,17 +187,18 @@
     <!-- third section >> services  -->
     <div id="Services" class="px-6 py-15 w-full flex flex-col text-white space-y-7">
 
-      <div class="flex justify-start font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+      <div data-aos="zoom-in-out" data-aos-duration="800"
+        class="flex justify-start font-semibold text-3xl md:text-4xl text-orange-600">
         <p>
           Services:
         </p>
       </div>
 
       <!-- Services -->
-      <div
+      <div data-aos="fade-up" data-aos-duration="800"
         class="px-6 flex flex-col sm:flex-row justify-center items-center md:justify-center md:items-center space-y-5 space-x-3 sm:space-y-0 md:space-x-5">
         <div
-          class="flex justify-between items-center  px- space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          class="flex justify-between items-center  px- space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
           <p>
             <iconify-icon icon="mingcute:star-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
           </p>
@@ -203,7 +209,7 @@
         </div>
 
         <div
-          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
           <p>
             <iconify-icon icon="sidekickicons:computer-laptop" width="24" height="24" style="color: #fb3922">
             </iconify-icon>
@@ -215,7 +221,7 @@
         </div>
 
         <div
-          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
           <p>
             <iconify-icon icon="material-symbols:settings-rounded" width="24" height="24" style="color: #fb3922">
             </iconify-icon>
@@ -227,9 +233,10 @@
         </div>
       </div>
 
-      <div class="h-full w-full flex justify-center items-center space-x-5">
+      <div data-aos="fade-down" data-aos-duration="800"
+        class="h-full w-full flex justify-center items-center space-x-5">
         <div
-          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
           <p>
             <iconify-icon icon="flowbite:bug-solid" width="24" height="24" style="color: #fb3922"></iconify-icon>
           </p>
@@ -240,7 +247,7 @@
         </div>
 
         <div
-          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2 imageReview">
+          class="flex justify-center items-center space-x-3 border border-orange-500 rounded-[17px] px-4 py-2">
           <p>
             <iconify-icon icon="mingcute:flash-fill" width="24" height="24" style="color: #fb3922"></iconify-icon>
           </p>
@@ -257,11 +264,11 @@
     <div id="Projects"
       class="bg-purple-30 w-full px-6 py-10 flex flex-col justify-center items-center space-y-5 sm:space-y-0 md:space-x-10 md:flex-row">
 
-      <div class="bg-pink-20 text-white h-full w-full flex flex-col justify-center items-start space-y-5">
-        <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+      <div data-aos="zoom-in" data-aos-duration="800" class="bg-pink-20 text-white h-full w-full flex flex-col justify-center items-start space-y-5">
+        <h3 class="font-semibold text-3xl md:text-4xl text-orange-600">
           Project
         </h3>
-        <p class="autoShow">
+        <p>
           A few things I've built from landing pages to full-blown web apps. Clean codes, tasty design, just like
           muffins.
         </p>
@@ -272,7 +279,7 @@
         class="bg-pink-40 h-full w-full text-white space-x-5 space-y-7 gap-x-2 flex flex-col justify-center items-center md:flex-row  md:space-x-5 sm:space-y-0 md:space-y-0 sm:flex-row">
 
         <!-- Project One -->
-        <div class="bg-blue-00 h-full w-full flex flex-col space-y-3 imageReview">
+        <div data-aos="fade-up" data-aos-duration="800" class="bg-blue-00 h-full w-full flex flex-col space-y-3">
 
           <a href="https://ace-autos.vercel.app/#" class="space-y-3">
             <div
@@ -299,7 +306,7 @@
         </div>
 
         <!-- Project Two -->
-        <div class="bg-blue-00 h-full w-full flex flex-col space-y-3 imageReview">
+        <div data-aos="fade-down" data-aos-duration="800" class="bg-blue-00 h-full w-full flex flex-col space-y-3 ">
 
           <a href="https://muffins-makeup.vercel.app/" class="space-y-3">
             <div
@@ -332,26 +339,26 @@
     <!-- fifth section >> skills -->
     <div id="Skills" class="w-full px-6 py-10 flex flex-col justify-center items-center space-y-3 ">
 
-      <div class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
-        <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+      <div data-aos="fade-up" data-aos-duration="800" class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
+        <h3 class="font-semibold text-3xl md:text-4xl text-orange-600">
           Skills
         </h3>
-        <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold autoShow">
+        <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold">
           What I bring to the table
         </p>
-        <p class="autoShow">
+        <p>
           I've built a solid toolkit to turn ideas into clean, fast, and responsive user experiences.
         </p>
       </div>
 
       <!-- stack section -->
-      <div
+      <div data-aos="fade-down" data-aos-duration="800"
         class="h-auto md:h-30 text-white space-x-0 py-2 px-2 gap-x-2 flex  justify-center md:justify-start md:items-start ">
 
         <!-- first section -->
         <div class=" w-full h-full flex flex-col space-y-5 py-5 md:flex-row md:space-x-5 md:space-y-0 ">
           <!-- languages -->
-          <div class="flex items-center space-x-3 imageReview">
+          <div class="flex items-center space-x-3">
             <p>
               <iconify-icon icon="guidance:tools" width="24" height="24" style="color: #d24904"></iconify-icon>
             </p>
@@ -362,7 +369,7 @@
           </div>
 
           <!-- Frameworks & Libraries -->
-          <div class="flex items-center space-x-3 imageReview">
+          <div class="flex items-center space-x-3">
             <p>
               <iconify-icon icon="mdi:plus-box" width="24" height="24" style="color: #d24904"></iconify-icon>
             </p>
@@ -408,20 +415,20 @@
 
       <div class="space-y-5 sm:space-y-7 sm:space-x-10 flex flex-col ">
         <div class="text-white h-full w-full flex flex-col justify-center items-start space-y-3">
-          <h3 class="font-semibold text-3xl md:text-4xl text-orange-600 autoShow">
+          <h3 data-aos="fade-left" data-aos-duration="800" class="font-semibold text-3xl md:text-4xl text-orange-600">
             Contact Me
           </h3>
-          <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold autoShow">
+          <p class="text-[14px] md:text-[16px] text-orange-100 font-semibold">
             Let's build something amazing
           </p>
 
-          <p class="autoShow">
+          <p data-aos="fade-down" data-aos-duration="800">
             Got a project in mind, a cool collab idea or just want to say hi?
           </p>
         </div>
 
 
-        <div class="w-full h-full text-white flex flex-col sm:flex-ro sm:space-x-5 space-y-3 autoShow">
+        <div class="w-full h-full text-white flex flex-col sm:flex-ro sm:space-x-5 space-y-3">
 
           <!-- mail -->
           <div class="flex space-x-2">
@@ -445,7 +452,7 @@
           </div>
 
           <!-- let's talk btn -->
-          <div class="flex space-x-2 items-center pt-7">
+          <div  class="flex space-x-2 items-center pt-7">
             <a href="contact.html">
               <button
                 class="bg-orange-800 px-4 py-3 rounded-full cursor-pointer hover:bg-orange-900 duration-300 ease-in-out hover:scale-105">
@@ -457,7 +464,7 @@
         </div>
       </div>
 
-      <div class="autoShow pb-7 imageReview">
+      <div data-aos="fade-right" data-aos-duration="800" class="pb-7">
         <img src="/images/Group 2.png" alt="">
       </div>
 
@@ -468,7 +475,7 @@
     <footer class="w-full bg-black text-white py-10">
       <div class="container mx-auto px-6">
         <div class="flex flex-col md:flex-row justify-between items-center">
-          <div class="mb-4 md:mb-0 text-center md:text-left">
+          <div data-aos="fade-righ" data-aos-duration="1000" class="mb-4 md:mb-0 text-center md:text-left">
             <h3 class="text-xl font-bold">Hakeem Popoola</h3>
             <p class="text-orange-600">Frontend Developer</p>
           </div>
@@ -502,6 +509,12 @@
     </footer>
 
   </div>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <script>
+    AOS.init();
+  </script>
 
   <script src="script.js"></script>
 </body>
