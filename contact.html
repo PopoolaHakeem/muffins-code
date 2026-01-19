@@ -10,26 +10,27 @@
     <script src="https://code.iconify.design/iconify-icon/3.0.0/iconify-icon.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/flowbite@4.0.1/dist/flowbite.min.js"></script>
     <link href="https://fonts.googleapis.com/css2?family=BBH+Bartle&family=Sacramento&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
 
 </head>
 
 <body>
-    <div
-        class="w- bg-gradient-to-bl from-orange-900 to-[#000] text-white overflow-x-hidden">
+    <div class="w- bg-gradient-to-bl from-orange-900 to-[#000] text-white overflow-x-hidden">
 
         <div class="flex flex-col justify-center items-start md:items-center mx-auto">
 
             <div class="h-auto w-auto mx-auto space-y-7 pt-10 pb-7  px-6 flex flex-col justify-center items-center">
 
-                <h1 class="text-3xl md:text-4xl font-semibold text-orange-600">
+                <h1 data-aos="zoom-in-up" data-aos-duration="1000" class="text-3xl md:text-4xl font-semibold text-orange-600">
                     Contact Me
                 </h1>
-                <p class="flex flex-col ">
-                   <span>I would love to hear from you! Whether you have a question,</span>  
-                   <span> or want to collaborate on a project, feel free to reach</span> 
-                   <span>out using the form below.</span>
+                <p data-aos="fade-right" data-aos-duration="1000" class="flex flex-col ">
+                    <span>I would love to hear from you! Whether you have a question,</span>
+                    <span> or want to collaborate on a project, feel free to reach</span>
+                    <span>out using the form below.</span>
                 </p>
-                <form action="mailto:hakeem@gmail.com" method="POST" enctype="text/plain"
+                <form data-aos="zoom-in-up" data-aos-duration="1000" action="mailto:hakeem@gmail.com" method="POST" enctype="text/plain"
                     class="flex flex-col space-y-1 w-auto max-w-md  items-start justify-center">
                     <label for="name">Name:</label>
                     <input type="text" id="name" name="name" placeholder="Your Name"
@@ -59,6 +60,11 @@
 
 
     </div>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+    <script>
+    AOS.init();
+    </script>
     <script src="script.js"></script>
 </body>
 
